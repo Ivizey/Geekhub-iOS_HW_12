@@ -14,6 +14,7 @@
 		47F20DE423D1E90D00227B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F20DE323D1E90D00227B49 /* Assets.xcassets */; };
 		47F20DE723D1E90D00227B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F20DE523D1E90D00227B49 /* LaunchScreen.storyboard */; };
 		47F20DEF23D2192500227B49 /* Branches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DEE23D2192500227B49 /* Branches.swift */; };
+		47F20DF923D379D200227B49 /* ExchangeRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DF823D379D200227B49 /* ExchangeRateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		47F20DE623D1E90D00227B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47F20DE823D1E90D00227B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47F20DEE23D2192500227B49 /* Branches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branches.swift; sourceTree = "<group>"; };
+		47F20DF823D379D200227B49 /* ExchangeRateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				47F20DDC23D1E90900227B49 /* SceneDelegate.swift */,
 				47F20DEE23D2192500227B49 /* Branches.swift */,
 				47F20DDE23D1E90900227B49 /* ViewController.swift */,
+				47F20DF823D379D200227B49 /* ExchangeRateController.swift */,
 				47F20DE023D1E90900227B49 /* Main.storyboard */,
 				47F20DE323D1E90D00227B49 /* Assets.xcassets */,
 				47F20DE523D1E90D00227B49 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				47F20DDB23D1E90900227B49 /* AppDelegate.swift in Sources */,
 				47F20DDD23D1E90900227B49 /* SceneDelegate.swift in Sources */,
 				47F20DEF23D2192500227B49 /* Branches.swift in Sources */,
+				47F20DF923D379D200227B49 /* ExchangeRateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

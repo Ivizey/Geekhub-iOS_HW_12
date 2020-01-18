@@ -10,7 +10,6 @@
         <!--Відділення-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="BranchesView" customModule="home_work_12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -20,6 +19,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Відділення" image="mappin.and.ellipse" catalog="system" springLoaded="YES" id="E3C-o7-Qd6"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1838" y="394"/>
         </scene>
@@ -30,7 +30,68 @@
                     <view key="view" contentMode="scaleToFill" id="UB7-fl-vYd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-sM-nf2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rateCell" rowHeight="100" id="Ugp-Jk-mvr">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ugp-Jk-mvr" id="8EQ-DQ-G0E">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eurosign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-od-gir">
+                                                    <rect key="frame" x="20" y="25.5" width="50" height="49"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR/UAH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AS-ls-6s0">
+                                                    <rect key="frame" x="78" y="36.5" width="95" height="27"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Купівля: 15.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-Ge-Hhq">
+                                                    <rect key="frame" x="257" y="25" width="98" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продаж: 20.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-Xg-lDJ">
+                                                    <rect key="frame" x="257" y="54" width="106" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="JwJ-Ge-Hhq" secondAttribute="trailing" constant="59" id="5Lh-1W-hMR"/>
+                                                <constraint firstItem="F2l-Xg-lDJ" firstAttribute="leading" secondItem="JwJ-Ge-Hhq" secondAttribute="leading" id="Fs6-XF-NU3"/>
+                                                <constraint firstItem="9AS-ls-6s0" firstAttribute="leading" secondItem="hvh-od-gir" secondAttribute="trailing" constant="8" id="G5y-oJ-rtp"/>
+                                                <constraint firstItem="F2l-Xg-lDJ" firstAttribute="width" secondItem="8EQ-DQ-G0E" secondAttribute="height" multiplier="53:50" id="Iau-pK-WhB"/>
+                                                <constraint firstItem="hvh-od-gir" firstAttribute="centerY" secondItem="8EQ-DQ-G0E" secondAttribute="centerY" id="JwG-WG-h8Z"/>
+                                                <constraint firstItem="JwJ-Ge-Hhq" firstAttribute="width" secondItem="8EQ-DQ-G0E" secondAttribute="height" multiplier="49:50" id="MVa-sM-zzG"/>
+                                                <constraint firstItem="9AS-ls-6s0" firstAttribute="centerY" secondItem="8EQ-DQ-G0E" secondAttribute="centerY" id="SAH-gU-CsV"/>
+                                                <constraint firstItem="JwJ-Ge-Hhq" firstAttribute="top" secondItem="8EQ-DQ-G0E" secondAttribute="top" constant="25" id="WE8-gy-dkk"/>
+                                                <constraint firstItem="JwJ-Ge-Hhq" firstAttribute="leading" secondItem="9AS-ls-6s0" secondAttribute="trailing" constant="84" id="Yoh-MC-bnc"/>
+                                                <constraint firstItem="hvh-od-gir" firstAttribute="width" secondItem="8EQ-DQ-G0E" secondAttribute="width" multiplier="0.120773" id="dYQ-Cr-rRP"/>
+                                                <constraint firstItem="hvh-od-gir" firstAttribute="leading" secondItem="8EQ-DQ-G0E" secondAttribute="leading" constant="20" id="gk8-fY-n8v"/>
+                                                <constraint firstItem="F2l-Xg-lDJ" firstAttribute="top" secondItem="JwJ-Ge-Hhq" secondAttribute="bottom" constant="8" id="i8N-Yq-yEp"/>
+                                                <constraint firstItem="hvh-od-gir" firstAttribute="height" secondItem="8EQ-DQ-G0E" secondAttribute="height" multiplier="0.5" id="nVD-bH-HR3"/>
+                                                <constraint firstItem="F2l-Xg-lDJ" firstAttribute="trailing" secondItem="JwJ-Ge-Hhq" secondAttribute="trailing" id="ptM-cn-OWG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uFa-sM-nf2" firstAttribute="top" secondItem="ICs-AW-Vdd" secondAttribute="top" id="MKZ-33-KB9"/>
+                            <constraint firstItem="ICs-AW-Vdd" firstAttribute="trailing" secondItem="uFa-sM-nf2" secondAttribute="trailing" id="j9L-SY-irl"/>
+                            <constraint firstItem="uFa-sM-nf2" firstAttribute="leading" secondItem="ICs-AW-Vdd" secondAttribute="leading" id="wue-pb-QeK"/>
+                            <constraint firstItem="ICs-AW-Vdd" firstAttribute="bottom" secondItem="uFa-sM-nf2" secondAttribute="bottom" id="zpn-H5-X8K"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ICs-AW-Vdd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Курс Валют" image="chart.bar" catalog="system" id="aL6-4G-8KO"/>
@@ -60,6 +121,7 @@
     </scenes>
     <resources>
         <image name="chart.bar" catalog="system" width="64" height="44"/>
+        <image name="eurosign.circle" catalog="system" width="64" height="60"/>
         <image name="mappin.and.ellipse" catalog="system" width="58" height="64"/>
     </resources>
 </document>
