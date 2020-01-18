@@ -54,7 +54,7 @@ class ViewController: UIViewController {
             let rates = try JSONDecoder().decode([Rate].self, from: responseData)
             debugPrint(rates)
         } catch {
-            print(error)
+            debugPrint(error)
         }
     }
 }
@@ -65,7 +65,7 @@ extension Rate {
 
         self.currency = try container.decode(String.self, forKey: .currency)
         self.baseCurrency = try container.decode(String.self, forKey: .baseCurrency)
-        self.buy = try container.decode(Double.self, forKey: .buy)
-        self.sell = try container.decode(Double.self, forKey: .sell)
+        self.buy = (Double(try container.decode(String.self, forKey: .buy))) ?? 0.0
+        self.sell = (Double(try container.decode(String.self, forKey: .sell))) ?? 0.0
     }
 }
