@@ -26,16 +26,20 @@
         <!--Курс Валют-->
         <scene sceneID="3Ok-I1-9gu">
             <objects>
-                <viewController id="3ak-LG-9ZV" customClass="ViewController" customModule="home_work_12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3ak-LG-9ZV" customClass="ExchangeRateController" customModule="home_work_12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UB7-fl-vYd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-sM-nf2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-sM-nf2">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="769" id="YXh-DV-fBr"/>
+                                    <constraint firstAttribute="width" constant="414" id="dup-5T-zR4"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rateCell" rowHeight="100" id="Ugp-Jk-mvr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RateCell" rowHeight="100" id="Ugp-Jk-mvr" customClass="RateCell" customModule="home_work_12" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ugp-Jk-mvr" id="8EQ-DQ-G0E">
@@ -45,8 +49,8 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eurosign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-od-gir">
                                                     <rect key="frame" x="20" y="25.5" width="50" height="49"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR/UAH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AS-ls-6s0">
-                                                    <rect key="frame" x="78" y="36.5" width="95" height="27"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR/UAH" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AS-ls-6s0">
+                                                    <rect key="frame" x="78" y="37" width="95" height="26.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -73,7 +77,7 @@
                                                 <constraint firstItem="JwJ-Ge-Hhq" firstAttribute="width" secondItem="8EQ-DQ-G0E" secondAttribute="height" multiplier="49:50" id="MVa-sM-zzG"/>
                                                 <constraint firstItem="9AS-ls-6s0" firstAttribute="centerY" secondItem="8EQ-DQ-G0E" secondAttribute="centerY" id="SAH-gU-CsV"/>
                                                 <constraint firstItem="JwJ-Ge-Hhq" firstAttribute="top" secondItem="8EQ-DQ-G0E" secondAttribute="top" constant="25" id="WE8-gy-dkk"/>
-                                                <constraint firstItem="JwJ-Ge-Hhq" firstAttribute="leading" secondItem="9AS-ls-6s0" secondAttribute="trailing" constant="84" id="Yoh-MC-bnc"/>
+                                                <constraint firstItem="JwJ-Ge-Hhq" firstAttribute="leading" secondItem="9AS-ls-6s0" secondAttribute="trailing" constant="84" id="XA0-d0-kz4"/>
                                                 <constraint firstItem="hvh-od-gir" firstAttribute="width" secondItem="8EQ-DQ-G0E" secondAttribute="width" multiplier="0.120773" id="dYQ-Cr-rRP"/>
                                                 <constraint firstItem="hvh-od-gir" firstAttribute="leading" secondItem="8EQ-DQ-G0E" secondAttribute="leading" constant="20" id="gk8-fY-n8v"/>
                                                 <constraint firstItem="F2l-Xg-lDJ" firstAttribute="top" secondItem="JwJ-Ge-Hhq" secondAttribute="bottom" constant="8" id="i8N-Yq-yEp"/>
@@ -81,8 +85,18 @@
                                                 <constraint firstItem="F2l-Xg-lDJ" firstAttribute="trailing" secondItem="JwJ-Ge-Hhq" secondAttribute="trailing" id="ptM-cn-OWG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buyLabel" destination="JwJ-Ge-Hhq" id="vxO-54-vD2"/>
+                                            <outlet property="currencyBaseCurrency" destination="9AS-ls-6s0" id="U7o-F5-tAf"/>
+                                            <outlet property="currencyImage" destination="hvh-od-gir" id="nOu-vN-fPy"/>
+                                            <outlet property="sellLabel" destination="F2l-Xg-lDJ" id="dr4-p2-Jpp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3ak-LG-9ZV" id="upk-aP-dds"/>
+                                    <outlet property="delegate" destination="3ak-LG-9ZV" id="9Nc-82-tIJ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -95,6 +109,9 @@
                         <viewLayoutGuide key="safeArea" id="ICs-AW-Vdd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Курс Валют" image="chart.bar" catalog="system" id="aL6-4G-8KO"/>
+                    <connections>
+                        <outlet property="rateTableView" destination="uFa-sM-nf2" id="e1N-iu-nuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8R6-qK-3jI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
