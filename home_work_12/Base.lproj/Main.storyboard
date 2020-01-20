@@ -7,23 +7,104 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Відділення-->
+        <!--Branches Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BranchesView" customModule="home_work_12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BranchesController" customModule="home_work_12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="170" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2h5-cX-jFH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BranchesCell" rowHeight="170" id="yMp-Dh-vL2" customClass="BranchesCell" customModule="home_work_12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yMp-Dh-vL2" id="gnT-Cf-wJ1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ДГРУ, Отделение N41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFq-VI-CBA">
+                                                    <rect key="frame" x="20" y="11" width="199" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Місто: Днепропетровск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruj-fd-uRN">
+                                                    <rect key="frame" x="20" y="43" width="189" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Телефон: 8(056)771-20-83" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J6-LF-ZsH">
+                                                    <rect key="frame" x="20" y="67.5" width="215" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ел.пошта: elena.vasik@pbank.com.ua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vX-yx-aBB">
+                                                    <rect key="frame" x="20" y="96.5" width="290" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Адреса: ул Титова 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm5-VI-eDo">
+                                                    <rect key="frame" x="20" y="125.5" width="161" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="Zm5-VI-eDo" id="W93-Fb-nTJ"/>
+                                            <outlet property="cityLabel" destination="ruj-fd-uRN" id="6fa-vZ-yMi"/>
+                                            <outlet property="emailLabel" destination="2vX-yx-aBB" id="uw1-Is-x1m"/>
+                                            <outlet property="nameLabel" destination="UFq-VI-CBA" id="XWf-DV-Gxk"/>
+                                            <outlet property="phoneLabel" destination="7J6-LF-ZsH" id="w7j-oY-jaK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="xMG-aC-grl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DzW-42-dht"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2h5-cX-jFH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jkm-ud-0ac"/>
+                            <constraint firstItem="2h5-cX-jFH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="b0N-jY-20x"/>
+                            <constraint firstItem="2h5-cX-jFH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jXP-r1-uHc"/>
+                            <constraint firstItem="2h5-cX-jFH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jbf-Yt-XQk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Відділення" image="mappin.and.ellipse" catalog="system" springLoaded="YES" id="E3C-o7-Qd6"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GrH-Ha-L30">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="8OG-Cd-uJc">
+                            <connections>
+                                <action selector="searchButton:" destination="BYZ-38-t0r" id="082-hb-NRp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="branchesTableView" destination="2h5-cX-jFH" id="naG-sz-9kE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="394"/>
+            <point key="canvasLocation" x="2747.826086956522" y="393.75"/>
         </scene>
-        <!--Курс Валют-->
+        <!--Exchange Rate Controller-->
         <scene sceneID="3Ok-I1-9gu">
             <objects>
                 <viewController id="3ak-LG-9ZV" customClass="ExchangeRateController" customModule="home_work_12" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,12 +113,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-sM-nf2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="744"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="769" id="YXh-DV-fBr"/>
-                                    <constraint firstAttribute="width" constant="414" id="dup-5T-zR4"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RateCell" rowHeight="100" id="Ugp-Jk-mvr" customClass="RateCell" customModule="home_work_12" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
@@ -55,14 +132,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Купівля: 15.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-Ge-Hhq">
-                                                    <rect key="frame" x="257" y="25" width="98" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Купівля: 15.5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-Ge-Hhq">
+                                                    <rect key="frame" x="257" y="25" width="98" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продаж: 20.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-Xg-lDJ">
-                                                    <rect key="frame" x="257" y="54" width="106" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продаж: 20.2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-Xg-lDJ">
+                                                    <rect key="frame" x="257" y="53.5" width="106" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -94,28 +171,35 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="3ak-LG-9ZV" id="upk-aP-dds"/>
-                                    <outlet property="delegate" destination="3ak-LG-9ZV" id="9Nc-82-tIJ"/>
+                                    <outlet property="dataSource" destination="3ak-LG-9ZV" id="tHM-7k-MPv"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="uFa-sM-nf2" firstAttribute="top" secondItem="ICs-AW-Vdd" secondAttribute="top" id="MKZ-33-KB9"/>
-                            <constraint firstItem="ICs-AW-Vdd" firstAttribute="trailing" secondItem="uFa-sM-nf2" secondAttribute="trailing" id="j9L-SY-irl"/>
-                            <constraint firstItem="uFa-sM-nf2" firstAttribute="leading" secondItem="ICs-AW-Vdd" secondAttribute="leading" id="wue-pb-QeK"/>
-                            <constraint firstItem="ICs-AW-Vdd" firstAttribute="bottom" secondItem="uFa-sM-nf2" secondAttribute="bottom" id="zpn-H5-X8K"/>
+                            <constraint firstItem="uFa-sM-nf2" firstAttribute="leading" secondItem="ICs-AW-Vdd" secondAttribute="leading" id="8hh-z9-uDd"/>
+                            <constraint firstItem="uFa-sM-nf2" firstAttribute="trailing" secondItem="ICs-AW-Vdd" secondAttribute="trailing" id="oMb-uz-cgD"/>
+                            <constraint firstItem="uFa-sM-nf2" firstAttribute="top" secondItem="UB7-fl-vYd" secondAttribute="top" constant="20" symbolic="YES" id="olA-ZB-Bga"/>
+                            <constraint firstItem="uFa-sM-nf2" firstAttribute="bottom" secondItem="ICs-AW-Vdd" secondAttribute="bottom" id="tgc-64-6a4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ICs-AW-Vdd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Курс Валют" image="chart.bar" catalog="system" id="aL6-4G-8KO"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="LAP-FP-maO">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.clockwise" catalog="system" id="DHK-Zz-sKS">
+                            <connections>
+                                <action selector="refreshButton:" destination="3ak-LG-9ZV" id="onH-6i-tHa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="rateTableView" destination="uFa-sM-nf2" id="e1N-iu-nuc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8R6-qK-3jI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="-330"/>
+            <point key="canvasLocation" x="2747.826086956522" y="-330.13392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uhE-sw-DR9">
@@ -127,18 +211,58 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="3ak-LG-9ZV" kind="relationship" relationship="viewControllers" id="lqu-nb-4VY"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Nf4-cB-vyR"/>
+                        <segue destination="uza-nZ-Jeq" kind="relationship" relationship="viewControllers" id="lqu-nb-4VY"/>
+                        <segue destination="l6e-Wf-l1a" kind="relationship" relationship="viewControllers" id="Nf4-cB-vyR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceL-AR-c0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="859" y="107"/>
         </scene>
+        <!--Курс Валют-->
+        <scene sceneID="3kL-si-dL8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uza-nZ-Jeq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Курс Валют" image="chart.bar" catalog="system" id="aL6-4G-8KO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bfi-IJ-0Rh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3ak-LG-9ZV" kind="relationship" relationship="rootViewController" id="uIE-RN-gEF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hG3-Gm-X01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.68115942029" y="-330.13392857142856"/>
+        </scene>
+        <!--Відділення-->
+        <scene sceneID="VDQ-yW-2qU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l6e-Wf-l1a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Відділення" image="mappin.and.ellipse" catalog="system" springLoaded="YES" id="E3C-o7-Qd6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QP6-7S-2eX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0oF-rt-uEB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vl4-kv-pRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.68115942029" y="393.75"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
         <image name="chart.bar" catalog="system" width="64" height="44"/>
         <image name="eurosign.circle" catalog="system" width="64" height="60"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="mappin.and.ellipse" catalog="system" width="58" height="64"/>
     </resources>
 </document>

@@ -9,27 +9,33 @@
 /* Begin PBXBuildFile section */
 		47F20DDB23D1E90900227B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DDA23D1E90900227B49 /* AppDelegate.swift */; };
 		47F20DDD23D1E90900227B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DDC23D1E90900227B49 /* SceneDelegate.swift */; };
-		47F20DDF23D1E90900227B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DDE23D1E90900227B49 /* ViewController.swift */; };
+		47F20DDF23D1E90900227B49 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DDE23D1E90900227B49 /* Rate.swift */; };
 		47F20DE223D1E90900227B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F20DE023D1E90900227B49 /* Main.storyboard */; };
 		47F20DE423D1E90D00227B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F20DE323D1E90D00227B49 /* Assets.xcassets */; };
 		47F20DE723D1E90D00227B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F20DE523D1E90D00227B49 /* LaunchScreen.storyboard */; };
-		47F20DEF23D2192500227B49 /* Branches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DEE23D2192500227B49 /* Branches.swift */; };
+		47F20DEF23D2192500227B49 /* BranchesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DEE23D2192500227B49 /* BranchesController.swift */; };
 		47F20DF923D379D200227B49 /* ExchangeRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DF823D379D200227B49 /* ExchangeRateController.swift */; };
 		47F20DFB23D37D0700227B49 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DFA23D37D0700227B49 /* RateCell.swift */; };
+		47F20DFF23D4A2F500227B49 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20DFE23D4A2F500227B49 /* NetworkServices.swift */; };
+		47F20E0623D4D2CC00227B49 /* BranchesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20E0523D4D2CC00227B49 /* BranchesCell.swift */; };
+		47F20E0923D5981700227B49 /* Branches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F20E0823D5981700227B49 /* Branches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47F20DD723D1E90900227B49 /* home_work_12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home_work_12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F20DDA23D1E90900227B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F20DDC23D1E90900227B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		47F20DDE23D1E90900227B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47F20DDE23D1E90900227B49 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		47F20DE123D1E90900227B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47F20DE323D1E90D00227B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47F20DE623D1E90D00227B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47F20DE823D1E90D00227B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47F20DEE23D2192500227B49 /* Branches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branches.swift; sourceTree = "<group>"; };
+		47F20DEE23D2192500227B49 /* BranchesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesController.swift; sourceTree = "<group>"; };
 		47F20DF823D379D200227B49 /* ExchangeRateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateController.swift; sourceTree = "<group>"; };
 		47F20DFA23D37D0700227B49 /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		47F20DFE23D4A2F500227B49 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		47F20E0523D4D2CC00227B49 /* BranchesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesCell.swift; sourceTree = "<group>"; };
+		47F20E0823D5981700227B49 /* Branches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branches.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +70,51 @@
 			children = (
 				47F20DDA23D1E90900227B49 /* AppDelegate.swift */,
 				47F20DDC23D1E90900227B49 /* SceneDelegate.swift */,
-				47F20DEE23D2192500227B49 /* Branches.swift */,
-				47F20DDE23D1E90900227B49 /* ViewController.swift */,
-				47F20DF823D379D200227B49 /* ExchangeRateController.swift */,
-				47F20DFA23D37D0700227B49 /* RateCell.swift */,
+				47F20E0123D4D23C00227B49 /* Models */,
+				47F20E0023D4D20700227B49 /* ViewControllers */,
+				47F20E0223D4D26F00227B49 /* Services */,
+				47F20E0723D4D2DF00227B49 /* Cells */,
 				47F20DE023D1E90900227B49 /* Main.storyboard */,
 				47F20DE323D1E90D00227B49 /* Assets.xcassets */,
 				47F20DE523D1E90D00227B49 /* LaunchScreen.storyboard */,
 				47F20DE823D1E90D00227B49 /* Info.plist */,
 			);
 			path = home_work_12;
+			sourceTree = "<group>";
+		};
+		47F20E0023D4D20700227B49 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				47F20DEE23D2192500227B49 /* BranchesController.swift */,
+				47F20DF823D379D200227B49 /* ExchangeRateController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		47F20E0123D4D23C00227B49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47F20DDE23D1E90900227B49 /* Rate.swift */,
+				47F20E0823D5981700227B49 /* Branches.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47F20E0223D4D26F00227B49 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				47F20DFE23D4A2F500227B49 /* NetworkServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		47F20E0723D4D2DF00227B49 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				47F20DFA23D37D0700227B49 /* RateCell.swift */,
+				47F20E0523D4D2CC00227B49 /* BranchesCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F20DDF23D1E90900227B49 /* ViewController.swift in Sources */,
+				47F20DDF23D1E90900227B49 /* Rate.swift in Sources */,
 				47F20DDB23D1E90900227B49 /* AppDelegate.swift in Sources */,
 				47F20DDD23D1E90900227B49 /* SceneDelegate.swift in Sources */,
-				47F20DEF23D2192500227B49 /* Branches.swift in Sources */,
+				47F20DEF23D2192500227B49 /* BranchesController.swift in Sources */,
+				47F20DFF23D4A2F500227B49 /* NetworkServices.swift in Sources */,
 				47F20DF923D379D200227B49 /* ExchangeRateController.swift in Sources */,
+				47F20E0923D5981700227B49 /* Branches.swift in Sources */,
 				47F20DFB23D37D0700227B49 /* RateCell.swift in Sources */,
+				47F20E0623D4D2CC00227B49 /* BranchesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

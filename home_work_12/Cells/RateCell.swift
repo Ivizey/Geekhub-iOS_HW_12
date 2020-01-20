@@ -9,10 +9,10 @@
 import UIKit
 
 class RateCell: UITableViewCell {
-    @IBOutlet weak var currencyImage: UIImageView!
-    @IBOutlet weak var currencyBaseCurrency: UILabel!
-    @IBOutlet weak var buyLabel: UILabel!
-    @IBOutlet weak var sellLabel: UILabel!
+    @IBOutlet private weak var currencyImage: UIImageView!
+    @IBOutlet private weak var currencyBaseCurrency: UILabel!
+    @IBOutlet private weak var buyLabel: UILabel!
+    @IBOutlet private weak var sellLabel: UILabel!
     
     func setImage(image: UIImage) {
         currencyImage.image = image
@@ -23,10 +23,10 @@ class RateCell: UITableViewCell {
     }
     
     func setBuy(buy: Double) {
-        buyLabel.text = "Купівля: \(buy)"
+        buyLabel.text = "Купівля: " + String(format: "%.2f", buy)
     }
     
     func setSell(sell: Double) {
-        sellLabel.text = "Продаж: \(sell)"
+        sellLabel.text = "Продаж: " + String(format: "%.2f", sell)
     }
 }
