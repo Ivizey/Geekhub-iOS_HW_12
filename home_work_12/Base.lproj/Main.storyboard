@@ -26,42 +26,55 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ДГРУ, Отделение N41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFq-VI-CBA">
-                                                    <rect key="frame" x="20" y="11" width="199" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ДГРУ, Отделение N41" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFq-VI-CBA">
+                                                    <rect key="frame" x="20" y="11" width="374" height="24"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Місто: Днепропетровск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruj-fd-uRN">
-                                                    <rect key="frame" x="20" y="43" width="189" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Місто: Днепропетровск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruj-fd-uRN">
+                                                    <rect key="frame" x="20" y="38" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Телефон: 8(056)771-20-83" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J6-LF-ZsH">
-                                                    <rect key="frame" x="20" y="67.5" width="215" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон: 8(056)771-20-83" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J6-LF-ZsH">
+                                                    <rect key="frame" x="20" y="62.5" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ел.пошта: elena.vasik@pbank.com.ua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vX-yx-aBB">
-                                                    <rect key="frame" x="20" y="96.5" width="290" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ел.пошта: elena.vasik@pbank.com.ua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vX-yx-aBB">
+                                                    <rect key="frame" x="20" y="87" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Адреса: ул Титова 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm5-VI-eDo">
-                                                    <rect key="frame" x="20" y="125.5" width="161" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адреса: ул Титова 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm5-VI-eDo">
+                                                    <rect key="frame" x="20" y="111.5" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UFq-VI-CBA" firstAttribute="width" secondItem="gnT-Cf-wJ1" secondAttribute="width" multiplier="0.903382" id="300-YF-FdD"/>
+                                                <constraint firstItem="7J6-LF-ZsH" firstAttribute="firstBaseline" secondItem="ruj-fd-uRN" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="6gu-Ub-Bug"/>
+                                                <constraint firstItem="UFq-VI-CBA" firstAttribute="leading" secondItem="gnT-Cf-wJ1" secondAttribute="leading" constant="20" id="AP6-Q8-YBR"/>
+                                                <constraint firstItem="7J6-LF-ZsH" firstAttribute="width" secondItem="gnT-Cf-wJ1" secondAttribute="width" multiplier="0.903382" id="BAh-ro-aVT"/>
+                                                <constraint firstItem="ruj-fd-uRN" firstAttribute="width" secondItem="gnT-Cf-wJ1" secondAttribute="width" multiplier="0.903382" id="Fw8-eh-lC7"/>
+                                                <constraint firstItem="Zm5-VI-eDo" firstAttribute="width" secondItem="gnT-Cf-wJ1" secondAttribute="width" multiplier="0.903382" id="NYA-zK-fni"/>
+                                                <constraint firstItem="2vX-yx-aBB" firstAttribute="width" secondItem="gnT-Cf-wJ1" secondAttribute="width" multiplier="0.903382" id="Yz1-5h-PjR"/>
+                                                <constraint firstItem="2vX-yx-aBB" firstAttribute="leading" secondItem="7J6-LF-ZsH" secondAttribute="leading" id="dNZ-hM-eAO"/>
+                                                <constraint firstItem="7J6-LF-ZsH" firstAttribute="leading" secondItem="ruj-fd-uRN" secondAttribute="leading" id="dXT-Hi-qsf"/>
+                                                <constraint firstAttribute="trailing" secondItem="UFq-VI-CBA" secondAttribute="trailing" constant="20" id="hcE-0v-dA0"/>
+                                                <constraint firstItem="ruj-fd-uRN" firstAttribute="firstBaseline" secondItem="UFq-VI-CBA" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="lMz-02-atJ"/>
+                                                <constraint firstItem="Zm5-VI-eDo" firstAttribute="leading" secondItem="2vX-yx-aBB" secondAttribute="leading" id="uL0-Mh-Mva"/>
+                                                <constraint firstItem="UFq-VI-CBA" firstAttribute="top" secondItem="gnT-Cf-wJ1" secondAttribute="top" constant="11" id="uR6-4W-tT8"/>
+                                                <constraint firstItem="Zm5-VI-eDo" firstAttribute="firstBaseline" secondItem="2vX-yx-aBB" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="vDg-Uu-Xpc"/>
+                                                <constraint firstItem="2vX-yx-aBB" firstAttribute="firstBaseline" secondItem="7J6-LF-ZsH" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="vkS-Lf-bjn"/>
+                                                <constraint firstItem="ruj-fd-uRN" firstAttribute="leading" secondItem="UFq-VI-CBA" secondAttribute="leading" id="zkK-9V-fiP"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addressLabel" destination="Zm5-VI-eDo" id="W93-Fb-nTJ"/>
@@ -112,34 +125,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-sM-nf2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-sM-nf2">
                                 <rect key="frame" x="0.0" y="20" width="414" height="744"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RateCell" rowHeight="100" id="Ugp-Jk-mvr" customClass="RateCell" customModule="home_work_12" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RateCell" rowHeight="120" id="Ugp-Jk-mvr" customClass="RateCell" customModule="home_work_12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ugp-Jk-mvr" id="8EQ-DQ-G0E">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eurosign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-od-gir">
-                                                    <rect key="frame" x="20" y="25.5" width="50" height="49"/>
+                                                    <rect key="frame" x="20" y="30.5" width="50" height="59"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR/UAH" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AS-ls-6s0">
-                                                    <rect key="frame" x="78" y="37" width="95" height="26.5"/>
+                                                    <rect key="frame" x="78" y="33" width="75.5" height="54.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Купівля: 15.5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-Ge-Hhq">
-                                                    <rect key="frame" x="257" y="25" width="98" height="20.5"/>
+                                                    <rect key="frame" x="237.5" y="25" width="117.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продаж: 20.2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-Xg-lDJ">
-                                                    <rect key="frame" x="257" y="53.5" width="106" height="20.5"/>
+                                                    <rect key="frame" x="237.5" y="53.5" width="127" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>

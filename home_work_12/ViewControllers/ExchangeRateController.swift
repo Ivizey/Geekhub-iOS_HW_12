@@ -15,12 +15,7 @@ class ExchangeRateController: UIViewController {
                           "eurosign.circle",
                           "rublesign.circle",
                           "bitcoinsign.circle"]
-    private lazy var rates = [Rate]()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+    private var rates = [Rate]()
     
     @IBAction func refreshButton(_ sender: UIBarButtonItem) {
         getRates()
